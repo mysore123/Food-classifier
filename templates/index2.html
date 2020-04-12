@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Lobster|Playfair+Display:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="topic">
+    <h1>Food Classification <em>and</em> Calorie Estimation</h1>
+  </div>
+
+  <div class="filebutton">
+    <form enctype="multipart/form-data" method="post">
+      <input type="file" id="real-file" hidden="hidden"/>
+      <button type="button" id="mybutton">CHOOSE A FILE</button>
+      <span id="custom-text">No file chosen yet</span>
+      <input type=submit value=Upload>
+    </form>
+  </div>
+<script src="{{url_for('static',filename='button.js')}}" charset="utf-8"></script>
+</body>
+</html>
